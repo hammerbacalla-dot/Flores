@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Un detalle de Hammer 💛</title>
+<style>
+:root{--bg:#0b0a09;--bg2:#14120f;--gold:#d7b66a;--yellow:#e7c640;--yellow2:#f3df86;--ivory:#f7f1e7;--muted:#c7beb0;--green:#314733}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ivory);font-family:Arial,Helvetica,sans-serif}
+body{background:radial-gradient(circle at 20% 15%,rgba(215,182,106,.08),transparent 24%),radial-gradient(circle at 80% 75%,rgba(231,198,64,.06),transparent 28%),linear-gradient(180deg,var(--bg),var(--bg2))}
+#particles{position:fixed;inset:0;pointer-events:none;overflow:hidden}.p{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--yellow2);opacity:.14;animation:float 10s linear infinite}
+@keyframes float{0%{transform:translateY(20px);opacity:0}20%{opacity:.25}100%{transform:translateY(-110vh);opacity:0}}
+.scene{position:absolute;inset:0;padding:24px;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(8px) scale(.99);pointer-events:none;transition:.7s ease}.scene.active{opacity:1;transform:none;pointer-events:auto}
+.card{width:min(92vw,420px);text-align:center}h1,h2,.serif{font-family:Georgia,"Times New Roman",serif}h1{font-size:clamp(40px,12vw,58px);font-weight:500;margin:0 0 12px}h2{font-size:clamp(28px,8vw,38px);font-weight:500;margin:0 0 14px;line-height:1.15}
+p{font-size:16px;line-height:1.6;color:var(--muted);margin:0 auto 18px;max-width:34ch}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}.divider{width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:20px auto}
+button{border:1px solid rgba(215,182,106,.38);background:rgba(215,182,106,.08);color:var(--ivory);border-radius:999px;padding:12px 20px;font-size:14px}button:active{transform:scale(.98)}
+.garden{position:absolute;inset:0;overflow:hidden}.garden-copy{position:absolute;top:max(28px,env(safe-area-inset-top));left:20px;right:20px;text-align:center;z-index:5}.garden-copy h2{font-size:26px;margin-bottom:6px}.garden-copy p{font-size:13px;margin:0}
+.main-flower{position:absolute;left:50%;bottom:17%;width:210px;height:210px;transform:translateX(-50%)}.stem{position:absolute;left:50%;top:175px;width:4px;height:250px;background:linear-gradient(#405b43,#26392a);transform:translateX(-50%);border-radius:4px}
+.petal{position:absolute;left:86px;top:12px;width:38px;height:92px;border-radius:72% 72% 46% 46%;background:linear-gradient(180deg,var(--yellow2),#c49521);transform-origin:19px 100px}.disc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:radial-gradient(circle,#7a5420 0 35%,#5d3f18 36% 100%)}
+.note{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);font-family:Georgia,serif;font-size:17px;width:max-content;max-width:86vw}.tap{position:absolute;left:50%;bottom:3%;transform:translateX(-50%);font-size:12px;color:#a99f91;white-space:nowrap}
+.small-flower{position:absolute;width:72px;height:92px;transform:translate(-50%,-50%) scale(.15);animation:bloom .45s ease forwards;pointer-events:none}@keyframes bloom{to{transform:translate(-50%,-50%) scale(1)}}.small-flower .s{position:absolute;left:34px;top:38px;width:3px;height:56px;background:var(--green)}.small-flower .d{position:absolute;left:27px;top:22px;width:18px;height:18px;border-radius:50%;background:#6f4d1b;z-index:3}.small-flower i{position:absolute;left:29px;top:3px;width:14px;height:35px;border-radius:70% 70% 45% 45%;background:var(--yellow);transform-origin:7px 41px}
+.toast{position:absolute;left:50%;top:25%;transform:translate(-50%,10px);padding:10px 14px;border:1px solid rgba(215,182,106,.2);background:rgba(10,9,8,.72);backdrop-filter:blur(10px);border-radius:14px;font-family:Georgia,serif;font-size:16px;opacity:0;transition:.3s;z-index:10;max-width:86vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+.cont{position:absolute;right:18px;bottom:18px;opacity:0;transition:.35s}.cont.show{opacity:1}.final-heart{width:106px;height:92px;margin:0 auto 24px;position:relative;animation:beat 2.8s ease-in-out infinite}.final-heart:before,.final-heart:after{content:"";position:absolute;top:0;width:55px;height:82px;border:2px solid var(--gold);border-bottom:0}.final-heart:before{left:53px;border-left:0;border-radius:45px 45px 0 0;transform:rotate(45deg);transform-origin:0 100%}.final-heart:after{left:0;border-right:0;border-radius:45px 45px 0 0;transform:rotate(-45deg);transform-origin:100% 100%}@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+.signature{font-family:Georgia,serif;font-size:19px;color:var(--yellow2);margin:22px 0}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+<section class="scene active" id="s1"><div class="card"><div class="eyebrow">Un pequeño detalle</div><h1>Para ti 💛</h1><div class="divider"></div><p class="serif" style="font-size:21px;color:#f2ebe1">Solo quería alegrarte un poquito el día.</p><p>Porque a veces un detalle sencillo también puede sacar una sonrisa.</p><button onclick="go(2)">Toca para comenzar ✨</button></div></section>
+<section class="scene" id="s2"><div class="garden" id="garden"><div class="garden-copy"><h2>Flores amarillas para ti</h2><p>Toca la pantalla y haz florecer este detalle 💛</p></div><div class="main-flower"><div class="stem"></div><div id="petals"></div><div class="disc"></div></div><div class="note">Un pequeño detalle para una gran persona.</div><div class="tap">Cada toque guarda una frase bonita</div><div class="toast" id="toast"></div><button class="cont" id="cont" onclick="go(3)">Seguir ✨</button></div></section>
+<section class="scene" id="s3"><div class="card"><div class="final-heart"></div><h2>Que nunca te falten motivos para sonreír.</h2><p>Y que siempre encuentres algo bonito incluso en los días más simples.</p><div class="signature">De Hammer 💛</div><button onclick="restart()">Volver a verlo</button></div></section>
+<script>
+const phrases=["Que tengas un bonito día.","Sigue brillando a tu manera.","Tu sonrisa siempre suma.","Te mereces cosas bonitas.","Que hoy te pase algo lindo.","Nunca dejes de sonreír.","Un detalle sencillo, pero con cariño.","Que siempre tengas razones para estar bien."];
+function go(n){document.querySelectorAll('.scene').forEach(s=>s.classList.remove('active'));document.getElementById('s'+n).classList.add('active')}
+for(let i=0;i<20;i++){const p=document.createElement('span');p.className='p';p.style.left=Math.random()*100+'%';p.style.top=(80+Math.random()*35)+'%';p.style.animationDelay=(-Math.random()*10)+'s';p.style.animationDuration=(8+Math.random()*6)+'s';document.getElementById('particles').appendChild(p)}
+const petals=document.getElementById('petals');for(let i=0;i<12;i++){const p=document.createElement('span');p.className='petal';p.style.transform=`rotate(${i*30}deg)`;petals.appendChild(p)}
+let taps=0,timer;const garden=document.getElementById('garden');garden.addEventListener('click',e=>{if(e.target.tagName==='BUTTON')return;const r=garden.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(y<90||y>r.height-40)return;spawn(x,y);showPhrase();taps++;if(taps>=4)document.getElementById('cont').classList.add('show')});
+function spawn(x,y){const f=document.createElement('div');f.className='small-flower';f.style.left=x+'px';f.style.top=y+'px';let inner='<span class="s"></span><span class="d"></span>';for(let i=0;i<8;i++)inner+=`<i style="transform:rotate(${i*45}deg)"></i>`;f.innerHTML=inner;garden.appendChild(f);if(document.querySelectorAll('.small-flower').length>10)document.querySelector('.small-flower').remove()}
+function showPhrase(){const t=document.getElementById('toast');t.textContent=phrases[Math.floor(Math.random()*phrases.length)];t.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>t.classList.remove('show'),1700)}
+function restart(){taps=0;document.querySelectorAll('.small-flower').forEach(e=>e.remove());document.getElementById('cont').classList.remove('show');go(1)}
+</script>
+</body>
+</html>
